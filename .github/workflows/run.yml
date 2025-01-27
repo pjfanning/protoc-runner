@@ -17,5 +17,7 @@ jobs:
           version: "25.6"
       - name: Run Protoc
         run: protoc order.proto --java_out=.
+      - name: List Files
+        run: ls -R
       - name: Git Diff
         run: git diff
