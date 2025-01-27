@@ -20,4 +20,4 @@ jobs:
       - name: List Files
         run: ls -R
       - name: Print file
-        run: cat docs/sample/OrderMessages.java
+        run: cat docs/javadsl/proto/OrderMessages.java
