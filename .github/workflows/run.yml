@@ -18,8 +18,8 @@ jobs:
       - name: Run Protoc
         run: protoc order.proto --java_out=.
       - name: List Files
-        run: ls -R
-      - name: Git add updated files
-        run: git add -u
+        run: git status
+      - name: Git add updated file
+        run: git add doc/sample/*.java
       - name: Git Diff
         run: git diff
