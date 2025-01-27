@@ -19,5 +19,7 @@ jobs:
         run: protoc order.proto --java_out=.
       - name: List Files
         run: ls -R
+      - name: Git add
+        run: git add *.java
       - name: Git Diff
         run: git diff
